@@ -12,12 +12,18 @@
   },
   "keywords": [
     "prime",
-    "generator"
+    "generator",
+    "node"
   ],
   "author": "Toby Hasler-Winter",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tobywinter/primer/issues"
   },
-  "homepage": "https://github.com/tobywinter/primer#readme"
+  "homepage": "https://github.com/tobywinter/primer#readme",
+  "dependencies": {
+    "requirejs": "^2.3.5",
+    "jasmine": "^2.8.0",
+    "jasmine-spec-reporter": "^4.2.1"
+  }
 }
