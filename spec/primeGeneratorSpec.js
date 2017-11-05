@@ -1,5 +1,4 @@
 const pG = require('../src/primeGenerator');
-const PrimeGenerator = pG.primeGenerator;
 
 describe('PrimeGenerator', function(){
 
