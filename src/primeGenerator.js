@@ -34,7 +34,9 @@ PrimeGenerator.prototype.sieveOfEratosthenes = function(limit) {
 };
 
 PrimeGenerator.prototype.generate = function(n) {
-  return [2,3,5,7];
+  var estimate = this.estimateLimit(n);
+  var primes = this.sieveOfEratosthenes(estimate);
+  return primes.slice(0, n);
 };
 
 

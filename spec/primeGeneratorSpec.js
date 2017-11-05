@@ -22,6 +22,7 @@ describe('PrimeGenerator', function(){
   describe('generate', function(){
     it("returns the first n primes", function() {
       expect(primeGenerator.generate(4)).toEqual([2,3,5,7]);
+      expect(primeGenerator.generate(5)).toEqual([2,3,5,7,11]);
     });
   });
 });
