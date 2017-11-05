@@ -1,0 +1,23 @@
+{
+  "name": "primer",
+  "version": "1.0.0",
+  "description": "Prime number multiplication table generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobywinter/primer.git"
+  },
+  "keywords": [
+    "prime",
+    "generator"
+  ],
+  "author": "Toby Hasler-Winter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobywinter/primer/issues"
+  },
+  "homepage": "https://github.com/tobywinter/primer#readme"
+}
