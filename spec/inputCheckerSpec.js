@@ -7,8 +7,12 @@ describe('InputChecker', function() {
   });
 
   describe('checkInput', function() {
-    it('It returns false if input is not a whole number N', function(){
+    it('returns false if input is not a whole number N', function(){
       expect(checker.checkInput(1.5)).toEqual(false);
+    });
+
+    it('returns false if input is negative', function(){
+      expect(checker.checkInput(-5)).toEqual(false);
     });
   });
 });
