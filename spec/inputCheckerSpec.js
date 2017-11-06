@@ -14,5 +14,9 @@ describe('InputChecker', function() {
     it('returns false if input is negative', function(){
       expect(checker.checkInput(-5)).toEqual(false);
     });
+
+    it('returns true if input is valid', function() {
+      expect(checker.checkInput(5)).toEqual(true);
+    });
   });
 });
