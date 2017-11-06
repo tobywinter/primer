@@ -2,7 +2,7 @@ function PrimeGenerator() {
 }
 
 PrimeGenerator.prototype.estimateLimit = function(number) {
-  var estimate = Math.PI * (number);
+  var estimate = number * Math.log(number)*2;
   return Math.floor(estimate);
 };
 
