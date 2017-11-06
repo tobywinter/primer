@@ -21,11 +21,14 @@ Primer - Prime Generator
 - Use the Pie function to estimate the upper limit, required to generate n primes. Since the Seive of Eratosthenes method generates prime numbers up to a given limit and we want a given number of primes.
 - Make sure that more primes are generated with the sieve than are needed by the user.
 - Multiply the resulting array of primes by each number in the initial array to generate a 2D array that will be printed as a multiplication table.
-- Make sure any erroneous inputs are handled, using regex for simplicity. 
+- Make sure any erroneous inputs are handled, using regex for simplicity.
 
 
 
 #### TDD the building of these key features:
+- Generate Prime Numbers up to N
+- Print Multiplication Table for primes up to N
+- Handle user inputs: only accept whole numbers greater than 1
 
 ## Structure
 
@@ -68,7 +71,15 @@ node index.js
 #### Uncoopperative Users!
 ![Input handling](imgs/input_handling.png)
 
+## Technologies
+ - Javascript
+ - Jasmine
+ - easy-table
+ - requirejs
+
 ## Improvements
 
 Given time to develop:
-- I would build a front-end one page display.
+- I would want to try and optimise the nth prime estimate method, in my research online I found that there are several ways to do this a lot more accurately that I have, but understanding an implementing them was proving time consuming so I opted for a method which made an estimate that remains large enough to generate enough primes even when generating 200,000+.
+- I would definitely clean up some larger functions, try and break them down into smaller functions, but since the scope of the app is quite small it didn't prove very necessary at this stage.
+- It'd be worth doing a front end version of the print out on a web page since the width limitations of the console make larger print outs unreadable.
