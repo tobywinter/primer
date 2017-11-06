@@ -77,9 +77,13 @@ node index.js
  - easy-table
  - requirejs
 
+## What I Am Happy With
+- Learning about the different algorithm's used to generate prime numbers was fascinating, and I'm really please I got the sieveOfEratosthenes algorithm to work and include a few optimisations gleaned from my research.
+- Really pleased that the PrimeGenerator method worked properly after I realised I had gotten my nth prime estimation wrong. The fix isn't ideal but it works.
+
 ## Improvements
 
 Given time to develop:
-- I would want to try and optimise the nth prime estimate method, in my research online I found that there are several ways to do this a lot more accurately that I have, but understanding an implementing them was proving time consuming so I opted for a method which made an estimate that remains large enough to generate enough primes even when generating 200,000+.
+- I would want to try and optimise the nth prime estimate method, in my research online I found that there are several ways to do this a lot more accurately that I have, but understanding an implementing them was proving time consuming so I opted for a method which made an estimate that remains large enough to generate enough primes even when generating 200,000+ (in testing).
 - I would definitely clean up some larger functions, try and break them down into smaller functions, but since the scope of the app is quite small it didn't prove very necessary at this stage.
 - It'd be worth doing a front end version of the print out on a web page since the width limitations of the console make larger print outs unreadable.
