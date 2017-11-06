@@ -16,7 +16,7 @@ PrimeGenerator.prototype.sieveOfEratosthenes = function(limit) {
     sieve[i] = true;
   }
   for (i = 2; i <= Math.sqrt(limit); i += 1) {
-    if (sieve[i] !== true) {
+    if (sieve[i] === false) {
       continue;
     }
     for (l = i * i; l <= limit; l += i) {

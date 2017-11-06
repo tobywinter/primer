@@ -10,7 +10,20 @@ MultiplicationTable.prototype.calculate = function(array) {
       multiArray[i][j] = (array[j]) * (array[i]);
     }
   }
-  multiArray.unshift(array)
+  multiArray.unshift(array);
+  return multiArray;
+};
+
+MultiplicationTable.prototype.tabulate = function(array) {
+  var multiArray = this.calculate(array);
+  var length = array.length+1;
+  for(var i = 0; i < length; i++){
+    if(i === 0) {
+      multiArray[0].unshift('-');
+    } else {
+      multiArray[i].unshift(multiArray[0][i]);
+    }
+  }
   return multiArray;
 };
 
