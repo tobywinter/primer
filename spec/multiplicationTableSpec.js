@@ -1,4 +1,4 @@
-const multiply = require('../src/multiplicationTable');
+const m = require('../src/multiplicationTable');
 
 describe('MultiplicationTable', function(){
   const testPrimes = [2,3,5];
@@ -13,7 +13,7 @@ describe('MultiplicationTable', function(){
   [11,22,33,55,77,121]];
 
   beforeEach(function(){
-    multiplicationTable = new multiply.MultiplicationTable();
+    multiplicationTable = new m.MultiplicationTable();
   });
 
   describe('calculate', function(){
