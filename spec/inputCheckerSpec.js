@@ -22,5 +22,9 @@ describe('InputChecker', function() {
     it('returns true if input is valid', function() {
       expect(checker.checkInput(5)).toEqual(true);
     });
+
+    it('accepts input as a string', function() {
+      expect(checker.checkInput('10')).toEqual(true);
+    })
   });
 });
