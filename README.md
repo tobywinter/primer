@@ -18,7 +18,11 @@ Primer - Prime Generator
 
 ## Approach
 - The application should be able to generate a list of prime numbers, Sieve of Eratosthenes seems to be one of the most efficient ways to achieve this.
-- Use the Pie function to estimate the upper limit, k, required to generate n primes. Since the Seive of Eratosthenes method generates prime numbers up to a given limit (k) and we want a given number of primes (n).
+- Use the Pie function to estimate the upper limit, required to generate n primes. Since the Seive of Eratosthenes method generates prime numbers up to a given limit and we want a given number of primes.
+- Make sure that more primes are generated with the sieve than are needed by the user.
+- Multiply the resulting array of primes by each number in the initial array to generate a 2D array that will be printed as a multiplication table.
+- Make sure any erroneous inputs are handled, using regex for simplicity. 
+
 
 
 #### TDD the building of these key features:
@@ -27,28 +31,29 @@ Primer - Prime Generator
 
 ## To Run
 
-- clone repository
+- Clone & open the repo!
 
 ```
-git clone git@github.com:tobywinter/prime-generator.git
+git clone git@github.com:tobywinter/primer.git
+
+cd primer
 ```
-- run bundler
+- Make sure you have node installed and run:
 
 ```
-bundle install
+npm install
 ```
 
-Once in the prime-generator directory
-
-- run the tests
+#### Run the Tests in the console
 
 ```
-open SpecRunner.html
+jasmine
 ```
 
-- run the App in the console
+#### Run the App in the console!
 
 ```
+node index.js
 
 ```
 
@@ -60,6 +65,8 @@ open SpecRunner.html
 #### Displaying the results
 ![Displaying the results](imgs/results_display.png)
 
+#### Uncoopperative Users!
+![Input handling](imgs/input_handling.png)
 
 ## Improvements
 
